@@ -20,6 +20,13 @@ To get a local copy up and running follow these simple example steps:
  
  > access to http://localhost:3000/ in your browser
 
+
+## Live Demo
+
+-[Click here](https://polar-savannah-90867.herokuapp.com/)
+
+## Author
+
 👤 Oscar Bermudez
 
 - GitHub: [@githubhandle](https://github.com/zkr024)

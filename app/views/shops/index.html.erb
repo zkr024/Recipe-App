@@ -1,0 +1,28 @@
+<h1>Shopping list</h1>
+
+<div class="shop_table">
+  <div class="shop_title">
+    <h3>Food</h3>
+    <h3>Quantity</h3>
+    <h3>Price</h3>
+  </div>
+
+  <% @total = 0 %>
+
+  <% @recipe_food.each do |rec| %>
+    <div class="shop_info">
+      <div class="shop_rows">
+        <h4><%= rec.food.name %></h4>
+        <h4><%= rec.quantity %></h4>
+        <h4><%= rec.food.price %></h4>
+        <% @total += rec.food.price %>
+      </div>
+    <div>
+  <% end %>
+</div>
+
+
+<div class="totals">
+  <div>Amount of food items to buy: <%= @recipe_food.count %></div>
+  <div>Total value of food needed: $<%= @total %></div>
+</div>

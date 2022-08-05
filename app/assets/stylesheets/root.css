@@ -1,0 +1,22 @@
+.links {
+  width: 50%;
+  margin: 200px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  width: 20%;
+  background-color: rgb(69, 166, 250);
+  color: #fff;
+}
+
+.link:hover {
+  color: #00008b;
+  border: 1px solid rgb(69, 166, 250);
+  background-color: #fff;
+}

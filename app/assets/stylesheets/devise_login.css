@@ -1,0 +1,33 @@
+.remember {
+  position: relative;
+}
+
+.rmb_btn {
+  position: absolute;
+  left: 110px;
+  top: 3px;
+}
+
+.log_btn {
+  font-size: 12px;
+  width: 150px;
+  align-self: center;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgb(69, 166, 250);
+  color: #fff;
+  border: none;
+}
+
+.log_btn:hover {
+  cursor: pointer;
+  color: #00008b;
+  border: 1px solid rgb(69, 166, 250);
+  background-color: #fff;
+}
+
+.share_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

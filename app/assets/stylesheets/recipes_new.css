@@ -1,0 +1,9 @@
+.area {
+  resize: none;
+  height: 200px;
+}
+
+.public_checker {
+  align-self: start;
+  margin-top: 10px;
+}

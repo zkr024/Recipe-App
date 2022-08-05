@@ -1,0 +1,18 @@
+.cards {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.card {
+  border: 1px solid rgb(69, 166, 250);
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.by,
+.totals {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 15px;
+}

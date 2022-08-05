@@ -1,0 +1,12 @@
+<div class="root">
+  <h1>Click the button to access the information</h1>
+</div>
+
+<div class="links">
+  <%= link_to 'Public recipes', publics_path, class: "link"%>
+
+  <% if user_signed_in? %>
+    <%= link_to 'Food list', user_foods_path(current_user.id), class: "link" %>
+    <%= link_to 'Recipes', user_recipes_path(current_user.id), class: "link" %>
+  <% end %>
+</div>

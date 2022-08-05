@@ -1,0 +1,23 @@
+.add_food_table {
+  width: 50%;
+  margin: 50px auto;
+}
+
+.title_columns h3 {
+  font-size: 20px;
+  background-color: #ddd;
+}
+
+.title_columns,
+.rows {
+  display: flex;
+}
+
+.title_columns h3,
+.rows h4 {
+  width: 25%;
+  margin: 5px;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 5px;
+}

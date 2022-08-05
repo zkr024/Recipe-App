@@ -1,0 +1,56 @@
+<h1><%= @recipe.name %></h1>
+
+<div class="recipe_info">
+  <div class='preparation'>
+    <div class='time'>
+      <div>
+        Preparation Time: <%= @recipe.preparation_time %>h
+      </div>
+      <div>
+        Cooking Time: <%= @recipe.cooking_time %>h
+      </div>
+      <div>
+        Steps:
+        <p><%= @recipe.description %></p>
+      </div>
+    </div>
+    <div>
+      <%= link_to 'Generate shopping list',  user_recipe_shops_path(current_user.id, @recipe.id), class: 'btnOne ' %>
+    </div>
+  </div>
+
+  <div class='more_details'>
+    <div>
+      is it public? <%= @recipe.public %>
+    </div>
+
+    <% if current_user.id == @recipe.user_id %>
+      <div>
+        <%= link_to 'Add Food', new_user_recipe_list_path(@recipe.user_id, @recipe.id), class: 'btn' %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<table class= "food_table">
+  <thead class= "head">
+    <tr>
+      <th>Food</th>
+      <th>Quantity</th>
+      <th>Value $</th>
+      <th>ID</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @recipe_food.each do |rec| %>
+      <tr>
+        <td><%= rec.food.name %></td>
+        <td><%= rec.quantity %></td>
+        <td><%= rec.food.price %></td>
+        <td><%= rec.id %></td>
+        <td><%= button_to 'Delete', user_recipe_list_path(@recipe.user_id, @recipe.id, rec.id), method: :delete, class: "delete" %></td>
+      </tr>
+    <% end %>  
+  </tbody>
+</table>

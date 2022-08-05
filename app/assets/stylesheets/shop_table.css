@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.shop_table {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.shop_title,
+.shop_info,
+.shop_rows,
+.totals {
+  display: flex;
+}
+
+.shop_title h3 {
+  background-color: #ddd;
+}
+
+.shop_title h3,
+.shop_rows h4 {
+  width: 33%;
+  border: 1px solid #000;
+  margin: 2px;
+  text-align: center;
+}
+
+.shop_info {
+  flex-direction: column;
+}
+
+.totals {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: space-between;
+}

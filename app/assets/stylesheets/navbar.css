@@ -1,0 +1,39 @@
+.navbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(69, 166, 250);
+  padding: 15px;
+  position: relative;
+}
+
+.welcome {
+  color: #fff;
+  font-size: 15px;
+}
+
+.home {
+  margin-left: 15px;
+}
+
+.access {
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.access:hover {
+  color: #00008b;
+}
+
+.out_btn,
+.in {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  padding: 5px 15px 0 0;
+  right: 0;
+  top: 0;
+}

@@ -1,0 +1,28 @@
+<h1>Recipe</h1>
+
+<%= form_with model: @recipe, url: user_recipes_path do |f| %> 
+  <div class="form">
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'input' %>
+    </div>
+    <div>
+      <%= f.label :preparation_time %>
+      <%= f.number_field :preparation_time, class: 'input' %>
+    </div>
+    <div>
+      <%= f.label :cooking_time %>
+      <%= f.number_field :cooking_time, class: 'input' %>
+    </div>
+    <div>
+      <%= f.label :description %>
+      <%= f.text_area :description, class: 'input area' %>
+    </div>
+    <div>
+      <%= f.label :public %>
+      <%= f.radio_button :public, "public", class: 'public_checker' %>
+    </div>
+
+    <%= f.submit 'Add', class: "link food_btn" %>
+  </div>
+<% end %>  

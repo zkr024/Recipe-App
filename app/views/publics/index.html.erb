@@ -1,0 +1,24 @@
+<h1>Public Recipes</h1>
+
+<div class="cards">
+  <% @public.each do |recipe| %>
+  <div class="card">
+    <% @result = 0 %>
+      <div class="by">
+        <h2><%= recipe.name %></h2>
+        <h5>Created By: <%= recipe.user.email %></h5>
+      </div>
+
+      <div class="totals">
+        <% @total_data = @recipe_food.where(recipe_id: recipe.id) %>
+        <h5>Total Food Items: <%= @total_data.count %></h5>
+
+        <% @total_data.each do |value| %>
+          <% @total = @food.where(id: value.food_id).first %>
+          <% @result += @total.price %>
+        <% end %> 
+        <h5>Total Price: <%= @result %></h5>
+      </div>
+  </div>
+  <% end %>
+</div>

@@ -1,0 +1,40 @@
+.card_recipe {
+  height: 150px;
+}
+
+.recipe_name {
+  width: 25%;
+  font-size: 30px;
+  margin: 8px 0 8px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  width: 65%;
+  font-size: 18px;
+  margin-top: 8px;
+  margin-right: 10px;
+  text-align: justify;
+  position: relative;
+}
+
+.link_delete {
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  background-color: rgb(69, 166, 250);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 8px;
+}
+
+.link_delete:hover {
+  color: #00008b;
+  border: 1px solid rgb(69, 166, 250);
+  background-color: #fff;
+}

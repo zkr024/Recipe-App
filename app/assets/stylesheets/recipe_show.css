@@ -1,0 +1,52 @@
+.recipe_info {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 50px auto;
+}
+
+.preparation {
+  width: 60%;
+}
+
+.preparation,
+.more_details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preparation div {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.preparation div p {
+  margin-top: 7px;
+  font-size: 18px;
+  font-weight: 111;
+}
+
+.btnOne,
+.btn {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(69, 166, 250);
+  color: #fff;
+}
+
+.btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.btnOne:hover,
+.btn:hover {
+  color: #00008b;
+  border: 1px solid rgb(69, 166, 250);
+  background-color: #fff;
+}

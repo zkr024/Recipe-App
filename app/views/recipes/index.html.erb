@@ -1,0 +1,24 @@
+<h1>Recipes list</h1>
+
+<ul class="cards">
+  <% @recipes.each do |recipe| %>
+    <li class="card card_recipe">
+      <div class="recipe_name">
+        <div><%= recipe.name %></div>
+
+        <% if current_user.id == recipe.user_id %>
+          <%= button_to 'Delete', user_recipe_path(@user, recipe), method: :delete, class: "delete" %>
+        <% end %>
+      </div>
+
+      <div class="description">
+        <p><%= recipe.description %></p>
+        <%= link_to 'show Recipe', user_recipe_path(@user, recipe), class: "link_delete" %>
+      </div>
+    </li>
+  <% end %>
+</ul>
+
+<div class="btn_location">
+  <%= link_to 'Add Recipe', new_user_recipe_path(@user), class: 'link'%>
+</div>

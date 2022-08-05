@@ -20,16 +20,6 @@ To get a local copy up and running follow these simple example steps:
  
  > access to http://localhost:3000/ in your browser
 
-## Author
-
-👤 **Ivan Gaona**
-
-- GitHub: [@ivaan1992](https://github.com/ivaan1992)
-- Twitter: [@ivangaona92](https://twitter.com/ivangaona92)
-- LinkedIn: [Ivan92](https://www.linkedin.com/in/ivan-linares-gaona/)
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=ivaan1992&show_icons=true&locale=en" alt="ivaan1992" /></p>
-
 👤 Oscar Bermudez
 
 - GitHub: [@githubhandle](https://github.com/zkr024)

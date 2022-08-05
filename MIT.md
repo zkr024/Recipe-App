@@ -1,4 +1,4 @@
-## Copyright 2022, Oscar Bermudez & Ivan Gaona
+## Copyright 2022, Oscar Bermudez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this repository and associated documentation files, to deal in the website without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the website, and to permit persons to whom the website is furnished to do so, subject to the following conditions:
 

@@ -23,7 +23,7 @@ To get a local copy up and running follow these simple example steps:
 
 ## Live Demo
 
--[Click here](https://polar-savannah-90867.herokuapp.com/)
+ > [Click here](https://polar-savannah-90867.herokuapp.com/)
 
 ## Author
 
